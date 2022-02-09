@@ -5,10 +5,10 @@
 
   "capabilities": {
     "project": "First TestNg Android Project",
-    "build": "BROWSERSTACK_BUILD_NAME",
+    "build": "browserstack-build-1",
     "name": "first_test",
     "browserstack.debug": true,
-    "app": "bs://<app-id>"
+    "app": "bs://2fac41a22ecab366da42303de8955cdedfd0fb69"
   },
 
   "environments": [
