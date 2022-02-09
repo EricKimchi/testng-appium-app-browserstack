@@ -61,6 +61,11 @@ public class BrowserStackTestNGTest {
           capabilities.setCapability("app", app);
         }
 
+        String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
+        if(buildName != null) {
+            capabilities.setCapability("build", buildName);
+        }
+
         driver = new AndroidDriver(new URL("http://"+username+":"+accessKey+"@"+config.get("server")+"/wd/hub"), capabilities);
     }
 
